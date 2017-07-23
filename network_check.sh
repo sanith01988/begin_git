@@ -6,4 +6,5 @@ else
 paplay $BEEP
 paplay $BEEP
 paplay $BEEP
+paplay $BEEP
 fi
