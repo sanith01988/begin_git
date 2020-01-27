@@ -1,22 +1,15 @@
-version: 1.2
-organization:
-  - onemmarketing:
-      - repository:
-          - platform-test:
-              reviewer:
-                - sanith
-                - aneesh
-          - platform-test1:
-              reviewer:
-                - sanith
-                - aneesh
-  - onemmarketing1:
-      - repository:
-          - platform-1-test:
-              reviewer:
-                - sanith
-                - aneesh
-          - platform-1-test1:
-              reviewer:
-                - sanith
-                - aneesh
+---
+project:
+  organization:
+    one:
+            platform-test:
+                  - sanith
+                  - aneesh
+            platform-test1:
+                  - sanith
+    two:
+            platform-1-test:
+                  - sanith
+                  - aneesh
+            platform-1-test1:
+                  - aneesh
