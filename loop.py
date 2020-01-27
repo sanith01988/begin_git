@@ -35,6 +35,6 @@ for i in range(0,len(scans)):
             scan3=list(get_config('project','organization',scans[i],scans1[j]))
             # print (scans[i],scans1[j],*scan3)
             # print (" ")
-            git_url="https://github.developer.io/"+scans[i]+"/"+scans1[j]
+            git_url=["https://github.developer.io/"+scans[i]+"/"+scans1[j]]
             print (git_url)
             print (*scan3)
