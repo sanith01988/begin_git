@@ -26,6 +26,7 @@ def get_config(*args):
          parsepath = parsepath + "['" + arg + "']"
      return eval(parsepath)
  f.close()
+lst=[]
 scans = list(get_config('project','organization'))
 for i in range(0,len(scans)):
     scans1=list(get_config('project','organization',scans[i]))
@@ -33,8 +34,10 @@ for i in range(0,len(scans)):
         scans2=list(get_config('project','organization',scans[i],scans1[j]))
         for k in range(0,len(scans2)):
             scan3=list(get_config('project','organization',scans[i],scans1[j]))
+            lst.append("https://github.developer.io/"+scans[i]+"/"+scans1[j])
             # print (scans[i],scans1[j],*scan3)
             # print (" ")
-            git_url=["https://github.developer.io/"+scans[i]+"/"+scans1[j]]
-            print (git_url)
-            print (*scan3)
+#             git_url=["https://github.developer.io/"+scans[i]+"/"+scans1[j]]
+print(lst)
+#             print (git_url)
+#             print (*scan3)
