@@ -1,15 +1,1 @@
----
-project:
-  organization:
-    one:
-            platform-test:
-                  - sanith
-                  - aneesh
-            platform-test1:
-                  - sanith
-    two:
-            platform-1-test:
-                  - sanith
-                  - aneesh
-            platform-1-test1:
-                  - aneesh
+
